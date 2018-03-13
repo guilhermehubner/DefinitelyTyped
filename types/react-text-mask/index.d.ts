@@ -9,7 +9,7 @@ import * as React from "react";
 export type maskArray = Array<string | RegExp>;
 
 export interface MaskedInputProps extends React.InputHTMLAttributes<HTMLInputElement> {
-    mask?: maskArray | ((input: HTMLInputElement) => maskArray);
+    mask?: maskArray | ((input: string) => maskArray);
 
     guide?: boolean;
 
